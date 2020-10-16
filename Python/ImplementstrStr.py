@@ -2,10 +2,10 @@ class Solution:
     BASE = 1000000
     
     def strStr(self, haystack: str, needle: str):
-        if not haystack:
-            return -1
         if not needle:
             return 0
+        if not haystack:
+            return -1
         
         m = len(needle)
         n = len(haystack)
