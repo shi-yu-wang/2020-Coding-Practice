@@ -1,5 +1,7 @@
 class Solution:
-    BASE = 1000000
+    
+    def __init__(self):
+        self.BASE = 1000000
     
     def strStr(self, haystack: str, needle: str):
         if not needle:
