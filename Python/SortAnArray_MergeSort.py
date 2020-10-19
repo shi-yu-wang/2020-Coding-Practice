@@ -43,6 +43,6 @@ class Solution:
             index += 1
             rightIndex += 1
 
-        for i in range(start, end):
+        for i in range(start, end + 1):
             A[i] = temp[i]
         
