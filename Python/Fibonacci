@@ -1,6 +1,11 @@
 class Solution:
-    def fib(self, N: int) -> int:
-        if N <= 2:
-            return N - 1
+    """
+    @param n: an integer
+    @return: an ineger f(n)
+    """
+    def fibonacci(self, n):
+        # write your code here
+        if n <= 2:
+            return n - 1
         
-        return fibonacci(N - 1) - fibonacci(N - 2)
+        return self.fibonacci(n - 1) - self.fibonacci(n - 2)
