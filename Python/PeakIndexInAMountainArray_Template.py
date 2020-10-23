@@ -17,7 +17,7 @@ class Solution:
             else:
                 end = mid
         
-        if nums[start] > nums[end]:
+        if nums[start] >= nums[end]:
             return nums[start]
         if nums[end] > nums[start]:
             return nums[end]
