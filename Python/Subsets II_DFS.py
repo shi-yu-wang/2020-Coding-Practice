@@ -2,7 +2,7 @@ class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         results = []
         if not nums:
-            return results
+            return [[]]
         
         nums.sort()
         self.subsetHelper(nums, 0, [], results)
