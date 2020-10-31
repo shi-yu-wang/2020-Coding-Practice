@@ -13,8 +13,10 @@ class Solution:
             results.append(subset)
             return 
         
+        # Don't accept nums[index]
         self.dfs(nums, index + 1, subset, results)
         
+        # Accept nums[index]
         subset = subset + [nums[index]]
         self.dfs(nums, index + 1, subset, results)
             
