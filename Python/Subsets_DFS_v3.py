@@ -14,4 +14,5 @@ class Solution:
         for i in range(startIndex, len(nums)):
             subset = subset + [nums[i]]
             self.dfs(nums, i + 1, subset, results)
+            # Backtracking
             del subset[len(subset) - 1]
